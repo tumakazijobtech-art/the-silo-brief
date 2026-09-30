@@ -1,0 +1,1175 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>The SILO Brief — Why Sh3.3 Trillion Never Reaches Kenya's MSMEs</title>
+	<meta name="description" content="Did you know only 16 in 100 Kenyan MSMEs can access formal credit? A visual research brief.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<link rel="icon" type="image/png" sizes="56x56" href="assets/images/fav-icon/icon.png">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="assets/css/all.min.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="assets/css/flaticon.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+	<style>
+		:root{
+			--paper:#FAF7F0;
+			--paper-2:#F2EDE0;
+			--paper-3:#E9E2D0;
+			--rule:#DDD5C0;
+			--rule-2:#C9BFA5;
+			--ink:#14161B;
+			--ink-2:#3A3D45;
+			--ink-3:#6B6F78;
+			--ink-4:#9A9EA6;
+			--navy:#0E2A5C;
+			--navy-2:#1B3F7E;
+			--amber:#C89A3C;
+			--amber-2:#E5B856;
+			--amber-soft:#F4E4BE;
+			--crimson:#B8262F;
+			--crimson-2:#8A1A22;
+			--crimson-soft:#F0DADD;
+			--green:#2F6B4A;
+			--shadow-sm:0 1px 2px rgba(20,22,27,.04), 0 2px 8px rgba(20,22,27,.04);
+			--shadow-md:0 4px 12px rgba(20,22,27,.06), 0 12px 32px rgba(20,22,27,.06);
+			--shadow-lg:0 12px 40px rgba(20,22,27,.08);
+			--serif:'Ancizar Serif','Iowan Old Style',Georgia,serif;
+			--sans:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+		}
+		*{ box-sizing:border-box; }
+		html{ scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+		html,body{ margin:0; padding:0; background:var(--paper); color:var(--ink); font-family:var(--sans); }
+		body{ font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+		img,svg{ max-width:100%; height:auto; display:block; }
+		a{ color:var(--navy); text-decoration:underline; text-underline-offset:3px; }
+		a:hover{ color:var(--crimson); }
+
+		h1,h2,h3,h4{ font-family:var(--serif); color:var(--ink); font-weight:600; letter-spacing:-0.015em; margin:0; line-height:1.1; }
+
+		/* Kill template decoration */
+		.dreamit-section-title:after,
+		.dreamit-section-title h5:before,
+		.dreamit-section-title h5:after{ display:none !important; }
+		.bounce-animate,.bounce-animate2,.bounce-animate3,.bounce-animate4,.bounce-animate5{ animation:none !important; }
+		.slider-shape,.feature-shape-thumb,.feature-shape-thumb2,.about-shape-thumb{ display:none !important; }
+
+		/* Layout */
+		.shell{ max-width:1240px; margin:0 auto; padding:0 clamp(18px,4vw,40px); }
+		.section{ padding:clamp(56px,7vw,96px) 0; border-bottom:1px solid var(--rule); position:relative; }
+		.section--paper{ background:var(--paper-2); }
+		.section--navy{ background:var(--navy); color:#E8E4D8; border-bottom-color:var(--navy-2); }
+		.section--navy h1,.section--navy h2,.section--navy h3,.section--navy h4{ color:#FBF8F1; }
+		.section--navy a{ color:var(--amber-2); }
+
+		.eyebrow{
+			display:inline-flex; align-items:center; gap:10px;
+			font-family:var(--sans); font-size:11px; font-weight:700;
+			letter-spacing:.18em; text-transform:uppercase;
+			color:var(--navy); margin-bottom:16px;
+		}
+		.eyebrow::before{ content:""; width:20px; height:1px; background:var(--amber); }
+		.section--navy .eyebrow{ color:var(--amber-2); }
+		.section--navy .eyebrow::before{ background:var(--amber-2); }
+
+		.hl-red{ color:var(--crimson); font-weight:600; }
+
+		/* ============================================================
+		   NAV
+		   ============================================================ */
+		.silo-nav{
+			position:sticky; top:0; z-index:500;
+			background:rgba(250,247,240,.94);
+			backdrop-filter:saturate(180%) blur(14px);
+			-webkit-backdrop-filter:saturate(180%) blur(14px);
+			border-bottom:1px solid var(--rule);
+		}
+		.silo-nav__inner{ display:flex; align-items:center; justify-content:space-between; padding:14px 0; gap:24px; }
+		.silo-brand{ display:flex; align-items:baseline; gap:12px; text-decoration:none; color:var(--ink); }
+		.silo-brand__name{ font-family:var(--serif); font-size:clamp(17px,1.6vw,21px); font-weight:600; }
+		.silo-brand__tag{ font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3); font-weight:600; }
+		.silo-nav__links{ display:flex; gap:2px; align-items:center; list-style:none; margin:0; padding:0; }
+		.silo-nav__links a{
+			display:inline-block; padding:9px 13px; font-size:14px; font-weight:500;
+			color:var(--ink-2); text-decoration:none; border-radius:2px;
+			transition:background .15s ease, color .15s ease;
+		}
+		.silo-nav__links a:hover{ background:var(--paper-2); color:var(--navy); }
+
+		.silo-burger{
+			display:none; width:44px; height:44px; align-items:center; justify-content:center;
+			background:transparent; border:1px solid var(--rule-2); border-radius:2px; cursor:pointer;
+		}
+		.silo-burger span{ display:block; width:18px; height:1.5px; background:var(--ink); position:relative; }
+		.silo-burger span::before,.silo-burger span::after{
+			content:""; position:absolute; left:0; width:18px; height:1.5px; background:var(--ink); transition:.2s ease;
+		}
+		.silo-burger span::before{ top:-6px; } .silo-burger span::after{ top:6px; }
+		.silo-burger[aria-expanded="true"] span{ background:transparent; }
+		.silo-burger[aria-expanded="true"] span::before{ top:0; transform:rotate(45deg); }
+		.silo-burger[aria-expanded="true"] span::after{ top:0; transform:rotate(-45deg); }
+
+		.silo-drawer{
+			display:none; position:fixed; inset:0 0 0 auto; width:min(360px,88vw);
+			background:var(--paper); border-left:1px solid var(--rule); z-index:600;
+			padding:28px 24px; transform:translateX(100%);
+			transition:transform .28s cubic-bezier(.4,0,.2,1);
+			box-shadow:-20px 0 60px rgba(0,0,0,.1); overflow-y:auto;
+		}
+		.silo-drawer.open{ transform:translateX(0); }
+		.silo-drawer__close{
+			position:absolute; top:18px; right:18px; width:40px; height:40px;
+			border:1px solid var(--rule-2); background:transparent; font-size:18px;
+			cursor:pointer; border-radius:2px; color:var(--ink);
+		}
+		.silo-drawer ul{ list-style:none; padding:0; margin:60px 0 0; }
+		.silo-drawer li{ border-bottom:1px solid var(--rule); }
+		.silo-drawer a{ display:block; padding:16px 0; font-family:var(--serif); font-size:19px; font-weight:600; color:var(--ink); text-decoration:none; }
+		.silo-overlay{
+			display:none; position:fixed; inset:0; background:rgba(20,22,27,.4);
+			z-index:550; opacity:0; transition:opacity .25s ease;
+		}
+		.silo-overlay.open{ opacity:1; }
+
+		@media (max-width:940px){
+			.silo-nav__links{ display:none; }
+			.silo-burger{ display:inline-flex; }
+			.silo-drawer{ display:block; }
+			.silo-overlay.open{ display:block; }
+		}
+
+		/* ============================================================
+		   HERO
+		   ============================================================ */
+		.hero{
+			padding:clamp(40px,5vw,64px) 0 clamp(48px,6vw,72px);
+			background:
+				radial-gradient(circle at 15% 20%, rgba(200,154,60,.08), transparent 55%),
+				radial-gradient(circle at 85% 90%, rgba(14,42,92,.05), transparent 60%),
+				var(--paper);
+			border-bottom:1px solid var(--rule);
+			position:relative;
+		}
+		.hero__grid{
+			display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);
+			gap:clamp(28px,4vw,56px); align-items:start;
+		}
+		@media (max-width:940px){ .hero__grid{ grid-template-columns:1fr; gap:36px; } }
+
+		.hero h1{
+			font-size:clamp(30px,4.6vw,54px);
+			line-height:1.05;
+			letter-spacing:-0.02em;
+			margin:0 0 22px;
+			max-width:16ch;
+		}
+		.hero h1 em{ font-style:normal; color:var(--crimson); position:relative; }
+		.hero h1 em::after{
+			content:""; position:absolute; left:0; bottom:-3px; right:0; height:2px;
+			background:var(--amber); border-radius:2px;
+		}
+
+		/* Did you know */
+		.did-you-know{
+			background:#fff; border:1px solid var(--rule); border-left:4px solid var(--crimson);
+			border-radius:0 4px 4px 0; padding:20px 22px 18px; margin:0 0 24px;
+			box-shadow:var(--shadow-sm);
+		}
+		.did-you-know__label{
+			display:inline-flex; align-items:center; gap:8px;
+			font-size:11px; font-weight:700; letter-spacing:.16em;
+			text-transform:uppercase; color:var(--crimson); margin-bottom:8px;
+		}
+		.did-you-know__label::before{
+			content:""; width:6px; height:6px; border-radius:50%;
+			background:var(--crimson); display:inline-block;
+		}
+		.did-you-know p{
+			font-family:var(--serif); font-size:clamp(16px,1.5vw,18px);
+			line-height:1.5; color:var(--ink); margin:0;
+		}
+
+		.hero__cta{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:24px; }
+		.btn{
+			display:inline-flex; align-items:center; gap:8px;
+			padding:13px 20px; border-radius:2px;
+			font-size:14px; font-weight:600; letter-spacing:.02em;
+			text-decoration:none; transition:.2s ease;
+			cursor:pointer; border:1px solid transparent; min-height:46px;
+		}
+		.btn--primary{ background:var(--navy); color:#fff; }
+		.btn--primary:hover{ background:var(--ink); color:#fff; transform:translateY(-1px); box-shadow:var(--shadow-md); }
+		.btn--ghost{ background:transparent; color:var(--ink); border-color:var(--rule-2); }
+		.btn--ghost:hover{ border-color:var(--ink); color:var(--ink); background:var(--paper-2); }
+
+		.hero__meta{
+			display:flex; flex-wrap:wrap; gap:6px 20px;
+			padding:14px 0; border-top:1px solid var(--rule); border-bottom:1px solid var(--rule);
+			font-size:12.5px; color:var(--ink-3);
+		}
+		.hero__meta b{ color:var(--ink); font-weight:600; }
+
+		/* ============================================================
+		   HERO DATA PANEL
+		   ============================================================ */
+		.data-panel{
+			background:#fff; border:1px solid var(--rule);
+			border-radius:6px; padding:24px 22px; box-shadow:var(--shadow-md);
+			position:relative;
+		}
+		.data-panel::before{
+			content:""; position:absolute; top:0; left:0; right:0; height:3px;
+			background:linear-gradient(90deg, var(--navy) 0% 60%, var(--crimson) 60% 100%);
+			border-radius:6px 6px 0 0;
+		}
+		.data-panel__label{
+			font-size:11px; letter-spacing:.16em; text-transform:uppercase;
+			color:var(--ink-3); font-weight:700; margin-bottom:14px;
+		}
+		.data-panel h3{ font-size:17px; margin:0 0 18px; font-weight:600; }
+
+		.compare__row{ margin-bottom:14px; }
+		.compare__row:last-child{ margin-bottom:0; }
+		.compare__label{
+			display:flex; justify-content:space-between; align-items:baseline;
+			font-size:12.5px; color:var(--ink-2); margin-bottom:6px;
+		}
+		.compare__label b{ font-family:var(--serif); font-size:16px; color:var(--ink); font-weight:600; }
+		.compare__label.bad b{ color:var(--crimson); }
+		.compare__track{ height:10px; background:var(--paper-2); border-radius:2px; overflow:hidden; }
+		.compare__fill{ height:100%; border-radius:2px; transition:width 1.4s cubic-bezier(.22,.9,.3,1); width:0; }
+		.compare__fill--navy{ background:linear-gradient(90deg, var(--navy), var(--navy-2)); }
+		.compare__fill--amber{ background:linear-gradient(90deg, var(--amber), var(--amber-2)); }
+		.compare__fill--crimson{ background:linear-gradient(90deg, var(--crimson), var(--crimson-2)); }
+		.compare__note{ font-size:11.5px; color:var(--crimson); margin-top:5px; font-weight:500; }
+
+		/* ============================================================
+		   SILO VISUAL
+		   ============================================================ */
+		.silo-visual{ text-align:center; margin-top:32px; }
+		.silo-visual svg{ max-width:860px; margin:0 auto; }
+
+		/* ============================================================
+		   BIG NUMBERS
+		   ============================================================ */
+		.numbers{
+			display:grid; grid-template-columns:repeat(3, minmax(0,1fr));
+			gap:clamp(16px,2vw,28px); margin-top:36px;
+		}
+		@media (max-width:820px){ .numbers{ grid-template-columns:1fr; } }
+
+		.big-num{
+			background:#fff; border:1px solid var(--rule); border-radius:6px;
+			padding:32px 26px; position:relative; transition:.25s ease;
+		}
+		.big-num:hover{ transform:translateY(-2px); box-shadow:var(--shadow-md); }
+		.big-num__icon{
+			width:40px; height:40px; border-radius:6px; margin-bottom:20px;
+			display:flex; align-items:center; justify-content:center;
+		}
+		.big-num__val{
+			font-family:var(--serif); font-size:clamp(48px,6vw,76px);
+			font-weight:600; line-height:.9; color:var(--ink);
+			letter-spacing:-.03em;
+		}
+		.big-num__val .u{ font-size:.4em; color:var(--ink-3); margin-left:4px; letter-spacing:0; }
+		.big-num__val.red{ color:var(--crimson); }
+		.big-num__val.red .u{ color:var(--crimson); opacity:.7; }
+		.big-num__cap{
+			font-size:14.5px; color:var(--ink-2); margin-top:18px;
+			line-height:1.5; max-width:24ch;
+		}
+		.big-num__src{
+			font-size:11px; color:var(--ink-4); margin-top:12px;
+			letter-spacing:.04em; text-transform:uppercase; font-weight:600;
+		}
+		.big-num--navy{ background:var(--navy); border-color:var(--navy); }
+		.big-num--navy .big-num__val{ color:#fff; }
+		.big-num--navy .big-num__val .u{ color:var(--amber-2); }
+		.big-num--navy .big-num__cap{ color:#C7CFDF; }
+		.big-num--navy .big-num__src{ color:#8894A8; }
+		.big-num--navy .big-num__icon{ background:rgba(255,255,255,.08); }
+		.big-num--navy .big-num__icon svg{ stroke:var(--amber-2); }
+
+		/* ============================================================
+		   GAP CHART (full width)
+		   ============================================================ */
+		.gap-chart{
+			background:#fff; border:1px solid var(--rule); border-radius:6px;
+			padding:clamp(24px,3vw,40px); box-shadow:var(--shadow-sm);
+		}
+		.gap-chart__head{
+			display:flex; justify-content:space-between; align-items:flex-end;
+			flex-wrap:wrap; gap:20px; margin-bottom:32px;
+			padding-bottom:22px; border-bottom:1px solid var(--rule);
+		}
+		.gap-chart__head h3{ font-size:clamp(20px,2.2vw,26px); }
+		.gap-chart__head .src{ font-size:12px; color:var(--ink-3); }
+		.gap-bars{ display:grid; gap:24px; }
+		.gap-bar__label{
+			display:flex; justify-content:space-between; align-items:baseline;
+			font-size:14px; color:var(--ink-2); margin-bottom:10px;
+		}
+		.gap-bar__label b{ font-family:var(--serif); font-size:clamp(20px,2vw,28px); color:var(--ink); font-weight:600; }
+		.gap-bar__label.bad b{ color:var(--crimson); }
+		.gap-bar__track{ height:20px; background:var(--paper-2); border-radius:2px; overflow:hidden; position:relative; }
+		.gap-bar__fill{ height:100%; border-radius:2px; transition:width 1.6s cubic-bezier(.22,.9,.3,1); width:0; }
+		.gap-bar__fill--navy{ background:linear-gradient(90deg, var(--navy), var(--navy-2)); }
+		.gap-bar__fill--amber{ background:linear-gradient(90deg, var(--amber), var(--amber-2)); }
+		.gap-bar__fill--crimson{ background:linear-gradient(90deg, var(--crimson), var(--crimson-2)); }
+
+		/* ============================================================
+		   INSTRUMENTS GRID
+		   ============================================================ */
+		.instr-grid{
+			display:grid; grid-template-columns:repeat(5, minmax(0,1fr));
+			gap:16px; margin-top:36px;
+		}
+		@media (max-width:1100px){ .instr-grid{ grid-template-columns:repeat(3,1fr); } }
+		@media (max-width:700px){ .instr-grid{ grid-template-columns:1fr 1fr; } }
+		@media (max-width:480px){ .instr-grid{ grid-template-columns:1fr; } }
+
+		.instr-card{
+			background:#fff; border:1px solid var(--rule); border-radius:6px;
+			padding:24px 20px; position:relative; overflow:hidden;
+			transition:.25s ease; display:flex; flex-direction:column;
+		}
+		.instr-card::before{
+			content:""; position:absolute; top:0; left:0; right:0; height:3px;
+			background:var(--amber); transform:scaleX(0); transform-origin:left;
+			transition:transform .35s ease;
+		}
+		.instr-card:hover{ transform:translateY(-3px); box-shadow:var(--shadow-md); }
+		.instr-card:hover::before{ transform:scaleX(1); }
+		.instr-card__num{
+			font-family:var(--serif); font-size:13px; font-weight:600;
+			color:var(--amber); letter-spacing:.1em; margin-bottom:14px;
+		}
+		.instr-card__icon{
+			width:44px; height:44px; border-radius:6px;
+			background:var(--paper-2); display:flex;
+			align-items:center; justify-content:center; margin-bottom:16px;
+		}
+		.instr-card__icon svg{ width:22px; height:22px; stroke:var(--navy); }
+		.instr-card h3{ font-size:16px; margin:0 0 12px; line-height:1.3; }
+		.instr-card p{ font-size:13.5px; color:var(--ink-2); line-height:1.55; margin:0 0 16px; flex:1; }
+		.instr-card__status{
+			font-size:11px; letter-spacing:.06em; text-transform:uppercase;
+			color:var(--ink-3); font-weight:600;
+			display:inline-flex; align-items:center; gap:6px;
+			padding-top:12px; border-top:1px solid var(--rule);
+		}
+		.instr-card__status::before{
+			content:""; width:6px; height:6px; border-radius:50%; background:var(--amber);
+		}
+
+		/* ============================================================
+		   RESEARCH CARDS
+		   ============================================================ */
+		.papers{
+			display:grid; grid-template-columns:repeat(4, minmax(0,1fr));
+			gap:14px; margin-top:32px;
+		}
+		@media (max-width:1100px){ .papers{ grid-template-columns:repeat(2,1fr); } }
+		@media (max-width:520px){ .papers{ grid-template-columns:1fr; } }
+
+		.paper{
+			background:#fff; border:1px solid var(--rule); border-radius:6px;
+			padding:20px; display:flex; flex-direction:column;
+			text-decoration:none; transition:.25s ease;
+			min-height:220px; color:var(--ink);
+		}
+		.paper:hover{ transform:translateY(-3px); box-shadow:var(--shadow-md); border-color:var(--rule-2); color:var(--ink); text-decoration:none; }
+		.paper__badge{
+			display:inline-flex; align-items:center; gap:6px;
+			font-size:10px; letter-spacing:.12em; text-transform:uppercase;
+			font-weight:700; padding:4px 9px; border-radius:2px;
+			margin-bottom:14px; align-self:flex-start;
+		}
+		.paper__badge--peer{ background:#DDE9F2; color:var(--navy); }
+		.paper__badge--brief{ background:#DEEEDE; color:var(--green); }
+		.paper__badge--thesis{ background:#E8E1F2; color:#4B2E83; }
+		.paper__badge--data{ background:var(--crimson-soft); color:var(--crimson); }
+		.paper__title{
+			font-family:var(--serif); font-size:15px; font-weight:600;
+			line-height:1.35; margin:0 0 8px;
+		}
+		.paper__author{ font-size:12.5px; color:var(--ink-3); margin:0 0 12px; }
+		.paper__metric{
+			font-family:var(--serif); font-size:22px; font-weight:600;
+			color:var(--navy); margin:auto 0 12px; letter-spacing:-.01em;
+		}
+		.paper__metric em{ font-style:normal; color:var(--crimson); }
+		.paper__link{
+			font-size:12.5px; font-weight:600; color:var(--navy);
+			display:inline-flex; align-items:center; gap:5px;
+			padding-top:12px; border-top:1px solid var(--rule);
+		}
+		.paper:hover .paper__link{ color:var(--crimson); }
+		.paper__link::after{ content:"→"; transition:transform .2s ease; }
+		.paper:hover .paper__link::after{ transform:translateX(3px); }
+
+		/* ============================================================
+		   VIDEO
+		   ============================================================ */
+		.video-card{
+			background:#fff; border:1px solid var(--rule); border-radius:6px;
+			overflow:hidden; box-shadow:var(--shadow-md); max-width:960px; margin:0 auto;
+		}
+		.video-frame{ position:relative; padding-top:56.25%; background:#000; }
+		.video-frame > *{ position:absolute; inset:0; width:100%; height:100%; }
+		.video-meta{
+			display:flex; justify-content:space-between; align-items:center;
+			gap:16px; padding:14px 20px; border-top:1px solid var(--rule);
+			flex-wrap:wrap; font-size:12.5px; color:var(--ink-3);
+		}
+		.video-meta b{ color:var(--ink); font-weight:600; }
+
+		/* ============================================================
+		   METHOD ICONS
+		   ============================================================ */
+		.method-row{
+			display:grid; grid-template-columns:repeat(3,minmax(0,1fr));
+			gap:20px; margin-top:32px;
+		}
+		@media (max-width:820px){ .method-row{ grid-template-columns:1fr; } }
+		.method{
+			text-align:center; padding:32px 24px;
+			background:#fff; border:1px solid var(--rule); border-radius:6px;
+		}
+		.method__icon{
+			width:56px; height:56px; border-radius:50%;
+			background:var(--paper-2); display:flex;
+			align-items:center; justify-content:center; margin:0 auto 18px;
+		}
+		.method__icon svg{ width:24px; height:24px; stroke:var(--navy); }
+		.method h4{ font-size:17px; margin:0 0 10px; font-weight:600; }
+		.method p{ font-size:14px; color:var(--ink-2); line-height:1.6; margin:0; }
+
+		/* ============================================================
+		   TEAM ROW
+		   ============================================================ */
+		.team-row{
+			display:grid; grid-template-columns:repeat(3,minmax(0,1fr));
+			gap:20px; margin-top:32px;
+		}
+		@media (max-width:820px){ .team-row{ grid-template-columns:1fr; } }
+		.person{
+			display:flex; align-items:flex-start; gap:16px;
+			padding:22px; background:#fff; border:1px solid var(--rule);
+			border-radius:6px;
+		}
+		.person__avatar{
+			width:52px; height:52px; border-radius:50%; flex-shrink:0;
+			background:linear-gradient(135deg, var(--navy), var(--navy-2));
+			display:flex; align-items:center; justify-content:center;
+			color:#fff; font-family:var(--serif); font-size:20px; font-weight:600;
+		}
+		.person h4{ font-size:16px; margin:0 0 3px; }
+		.person__role{
+			font-size:11.5px; color:var(--amber); letter-spacing:.08em;
+			text-transform:uppercase; font-weight:600; margin-bottom:6px;
+		}
+		.person p{ font-size:13.5px; color:var(--ink-2); margin:0; line-height:1.55; }
+
+		/* ============================================================
+		   CONTACT
+		   ============================================================ */
+		.contact-grid{
+			display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);
+			gap:clamp(28px,5vw,64px); align-items:start;
+		}
+		@media (max-width:900px){ .contact-grid{ grid-template-columns:1fr; gap:36px; } }
+
+		.invite h2{ font-size:clamp(22px,2.4vw,30px); margin:0 0 16px; }
+		.invite p{ color:var(--ink-2); font-size:15.5px; }
+		.invite .paths{ list-style:none; padding:0; margin:24px 0 0; }
+		.invite .paths li{
+			padding:14px 0; border-top:1px solid var(--rule);
+			font-size:14px; color:var(--ink-2); line-height:1.55;
+		}
+		.invite .paths b{ display:block; color:var(--ink); font-weight:600; margin-bottom:3px; font-size:12.5px; }
+
+		.form-card{
+			background:#fff; border:1px solid var(--rule); border-radius:6px;
+			padding:clamp(20px,3vw,30px); box-shadow:var(--shadow-sm);
+		}
+		.field{ margin-bottom:14px; }
+		.field label{
+			display:block; font-size:11.5px; letter-spacing:.08em;
+			text-transform:uppercase; font-weight:600; color:var(--ink-3);
+			margin-bottom:7px;
+		}
+		.field input, .field select, .field textarea{
+			width:100%; padding:13px 14px; min-height:46px;
+			border:1px solid var(--rule-2); background:var(--paper);
+			font-family:var(--sans); font-size:15px; color:var(--ink);
+			border-radius:2px; transition:.15s ease;
+		}
+		.field input:focus, .field select:focus, .field textarea:focus{
+			outline:none; border-color:var(--navy);
+			box-shadow:0 0 0 3px rgba(14,42,92,.08); background:#fff;
+		}
+		.field textarea{ min-height:120px; resize:vertical; }
+
+		/* ============================================================
+		   FOOTER
+		   ============================================================ */
+		.footer{ background:#101217; color:#A8ABB2; padding:clamp(48px,6vw,72px) 0 28px; font-size:14px; }
+		.footer__grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1.4fr; gap:32px; margin-bottom:48px; }
+		@media (max-width:820px){ .footer__grid{ grid-template-columns:1fr 1fr; gap:28px; } }
+		@media (max-width:500px){ .footer__grid{ grid-template-columns:1fr; } }
+		.footer h5{
+			font-family:var(--sans); font-size:11px; letter-spacing:.16em;
+			text-transform:uppercase; color:#6C7079; font-weight:700; margin:0 0 16px;
+		}
+		.footer a{ color:#D5D2C8; text-decoration:none; }
+		.footer a:hover{ color:#fff; text-decoration:underline; }
+		.footer ul{ list-style:none; padding:0; margin:0; }
+		.footer li{ padding:6px 0; }
+		.footer__brand{ font-family:var(--serif); font-size:20px; color:#F2EEE4; margin-bottom:12px; }
+		.footer__cite{ font-family:var(--serif); font-size:13.5px; line-height:1.6; color:#A8ABB2; margin:0; }
+		.footer__bottom{
+			border-top:1px solid #26292F; padding-top:22px;
+			display:flex; justify-content:space-between; flex-wrap:wrap;
+			gap:14px; font-size:12px; color:#6C7079;
+		}
+
+		/* Animations */
+		@keyframes fadeUp{ from{ opacity:0; transform:translateY(14px); } to{ opacity:1; transform:translateY(0); } }
+		.reveal{ animation:fadeUp .7s cubic-bezier(.22,.9,.3,1) both; }
+		.reveal-d1{ animation-delay:.08s; }
+		.reveal-d2{ animation-delay:.16s; }
+		.reveal-d3{ animation-delay:.24s; }
+		@media (prefers-reduced-motion:reduce){
+			*,*::before,*::after{ animation-duration:0.001ms !important; transition-duration:0.001ms !important; }
+		}
+	</style>
+</head>
+<body>
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<header class="silo-nav">
+	<div class="shell silo-nav__inner">
+		<a href="#" class="silo-brand">
+			<!-- <span class="silo-brand__name">The SILO Brief</span> -->
+            <span class="silo-brand__name"><img style="height: 60px; border-radius: 10px;" src="assets/images/the silo brief logo.png" alt="The SILO Brief"></span>
+			<!-- <span class="silo-brand__tag">Working Paper No. 1</span> -->
+		</a>
+		<ul class="silo-nav__links">
+			<li><a href="#problem">Problem</a></li>
+			<li><a href="#numbers">Numbers</a></li>
+			<li><a href="#gap">The Gap</a></li>
+			<li><a href="#instruments">Instruments</a></li>
+			<li><a href="#research">Research</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+		<button class="silo-burger" id="burger" aria-label="Open menu" aria-expanded="false">
+			<span></span>
+		</button>
+	</div>
+</header>
+
+<div class="silo-overlay" id="overlay"></div>
+<aside class="silo-drawer" id="drawer" aria-hidden="true">
+	<button class="silo-drawer__close" id="drawerClose" aria-label="Close menu">✕</button>
+	<ul>
+		<li><a href="#problem">The Problem</a></li>
+		<li><a href="#numbers">Headline Numbers</a></li>
+		<li><a href="#gap">The Financing Gap</a></li>
+		<li><a href="#instruments">Research Areas</a></li>
+		<li><a href="#research">Related Research</a></li>
+		<li><a href="#briefing">Briefing Video</a></li>
+		<li><a href="#method">Methodology</a></li>
+		<li><a href="#team">Team</a></li>
+		<li><a href="#contact">Contact</a></li>
+	</ul>
+</aside>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero">
+	<div class="shell">
+		<div class="hero__grid">
+			<div class="reveal">
+				<h1>The Sh3.3 trillion gap that <em>no one can see</em>.</h1>
+
+				<div class="did-you-know">
+					<div class="did-you-know__label">Did you know</div>
+					<p>Only <strong class="hl-red">16 in every 100</strong> Kenyan MSMEs can access formal credit. The other <strong class="hl-red">6.2 million</strong> are locked out by a <strong class="hl-red">collateral requirement</strong> they cannot meet.</p>
+				</div>
+
+				<div class="hero__cta">
+					<a href="#gap" class="btn btn--primary">
+						See the evidence
+						<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+					</a>
+					<a href="#contact" class="btn btn--ghost">Comment on the paper</a>
+				</div>
+
+				<div class="hero__meta">
+					<span><b>Author</b> Joshua Gichana</span>
+					<span><b>Version</b> 1.2</span>
+					<span><b>Status</b> Working paper</span>
+				</div>
+			</div>
+
+			<aside class="data-panel reveal reveal-d1">
+				<div class="data-panel__label">The gap at a glance</div>
+				<h3>Sh 4.0 trillion needed. Sh 0.7 trillion extended.</h3>
+				<div class="compare">
+					<div class="compare__row">
+						<div class="compare__label"><span>Required</span><b>Sh 4.0 T</b></div>
+						<div class="compare__track"><div class="compare__fill compare__fill--navy" data-width="100"></div></div>
+					</div>
+					<div class="compare__row">
+						<div class="compare__label"><span>Lent</span><b>Sh 0.7 T</b></div>
+						<div class="compare__track"><div class="compare__fill compare__fill--amber" data-width="18"></div></div>
+					</div>
+					<div class="compare__row">
+						<div class="compare__label bad"><span>Unmet</span><b>Sh 3.3 T</b></div>
+						<div class="compare__track"><div class="compare__fill compare__fill--crimson" data-width="82"></div></div>
+						<div class="compare__note">82% of the requirement goes unmet</div>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================
+     THE PROBLEM — SILO VISUAL
+     ============================================================ -->
+<section class="section section--paper" id="problem">
+	<div class="shell">
+		<div style="text-align:center; max-width:640px; margin:0 auto;">
+			<div class="eyebrow">The problem in one image</div>
+			<h2 style="font-size:clamp(22px,3vw,34px);">Two systems. No shared language.</h2>
+		</div>
+
+		<div class="silo-visual">
+			<svg viewBox="0 0 860 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram showing two circles representing banks and informal businesses that do not overlap">
+				<!-- Bank circle -->
+				<circle cx="240" cy="170" r="118" fill="#DDE9F2" stroke="#0E2A5C" stroke-width="1.5"/>
+				<text x="240" y="150" text-anchor="middle" font-family="Ancizar Serif, Georgia, serif" font-size="22" font-weight="600" fill="#0E2A5C">Formal</text>
+				<text x="240" y="178" text-anchor="middle" font-family="Ancizar Serif, Georgia, serif" font-size="22" font-weight="600" fill="#0E2A5C">lenders</text>
+				<text x="240" y="212" text-anchor="middle" font-family="IBM Plex Sans, Arial, sans-serif" font-size="12" fill="#6B6F78" letter-spacing="1.5">COLLATERAL · AUDITS · CREDIT HISTORY</text>
+
+				<!-- Informal circle -->
+				<circle cx="620" cy="170" r="118" fill="#F4E4BE" stroke="#C89A3C" stroke-width="1.5"/>
+				<text x="620" y="150" text-anchor="middle" font-family="Ancizar Serif, Georgia, serif" font-size="22" font-weight="600" fill="#8B6A1E">Informal</text>
+				<text x="620" y="178" text-anchor="middle" font-family="Ancizar Serif, Georgia, serif" font-size="22" font-weight="600" fill="#8B6A1E">businesses</text>
+				<text x="620" y="212" text-anchor="middle" font-family="IBM Plex Sans, Arial, sans-serif" font-size="12" fill="#6B6F78" letter-spacing="1.5">CASH FLOW · SKILLS · CHAMA STANDING</text>
+
+				<!-- Gap arrows -->
+				<g stroke="#B8262F" stroke-width="1.5" fill="none" stroke-dasharray="4 4">
+					<path d="M 358 170 L 502 170"/>
+					<path d="M 502 160 L 512 170 L 502 180" fill="#B8262F" stroke="none"/>
+				</g>
+				<text x="430" y="152" text-anchor="middle" font-family="IBM Plex Sans, Arial, sans-serif" font-size="12" font-weight="600" fill="#B8262F" letter-spacing="1.5">NO SHARED SIGNAL</text>
+				<text x="430" y="196" text-anchor="middle" font-family="Ancizar Serif, Georgia, serif" font-size="16" font-style="italic" fill="#B8262F">Sh3.3 trillion gap</text>
+
+				<!-- Bottom label -->
+				<text x="430" y="316" text-anchor="middle" font-family="IBM Plex Sans, Arial, sans-serif" font-size="11" fill="#9A9EA6" letter-spacing="1.5">THE PROBLEM IS NOT RISK. IT IS VISIBILITY.</text>
+			</svg>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================
+     BIG NUMBERS
+     ============================================================ -->
+<section class="section" id="numbers">
+	<div class="shell">
+		<div style="max-width:640px;">
+			<div class="eyebrow">Headline numbers</div>
+			<h2 style="font-size:clamp(22px,3vw,34px);">Three figures that frame everything</h2>
+		</div>
+
+		<div class="numbers">
+			<div class="big-num reveal">
+				<div class="big-num__icon" style="background:#F4E4BE;">
+					<svg viewBox="0 0 24 24" fill="none" stroke="#8B6A1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+				</div>
+				<div class="big-num__val">7.4<span class="u">M</span></div>
+				<div class="big-num__cap">MSMEs operating in Kenya, contributing 40% of GDP and employing 14.9M people.</div>
+				<div class="big-num__src">KNBS / KBA 2025</div>
+			</div>
+
+			<div class="big-num big-num--navy reveal reveal-d1">
+				<div class="big-num__icon">
+					<svg viewBox="0 0 24 24" fill="none" stroke="#E5B856" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+				</div>
+				<div class="big-num__val">16<span class="u">%</span></div>
+				<div class="big-num__cap">of MSMEs reach formal credit. The remaining 84% operate outside the system entirely.</div>
+				<div class="big-num__src">Wairimu &amp; Kiragu 2026</div>
+			</div>
+
+			<div class="big-num reveal reveal-d2">
+				<div class="big-num__icon" style="background:#F0DADD;">
+					<svg viewBox="0 0 24 24" fill="none" stroke="#B8262F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+				</div>
+				<div class="big-num__val red">Sh3.3<span class="u">T</span></div>
+				<div class="big-num__cap">unmet financing gap between what MSMEs need and what banks extend.</div>
+				<div class="big-num__src">KBA 2026 · CBK 2024</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================
+     THE GAP — FULL WIDTH CHART
+     ============================================================ -->
+<section class="section section--paper" id="gap">
+	<div class="shell">
+		<div class="gap-chart">
+			<div class="gap-chart__head">
+				<div>
+					<div class="eyebrow" style="margin-bottom:10px;">The financing gap</div>
+					<h3>Where the money stops</h3>
+				</div>
+				<div class="src">Sources: KBA 2026 · CBK 2024</div>
+			</div>
+
+			<div class="gap-bars">
+				<div class="gap-bar">
+					<div class="gap-bar__label"><span>MSME financing requirement</span><b>Sh 4.0 T</b></div>
+					<div class="gap-bar__track"><div class="gap-bar__fill gap-bar__fill--navy" data-width="100"></div></div>
+				</div>
+				<div class="gap-bar">
+					<div class="gap-bar__label"><span>Commercial bank lending to MSMEs</span><b>Sh 0.7 T</b></div>
+					<div class="gap-bar__track"><div class="gap-bar__fill gap-bar__fill--amber" data-width="18"></div></div>
+				</div>
+				<div class="gap-bar">
+					<div class="gap-bar__label bad"><span>Unmet gap (action required)</span><b>Sh 3.3 T</b></div>
+					<div class="gap-bar__track"><div class="gap-bar__fill gap-bar__fill--crimson" data-width="82"></div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================
+     INSTRUMENTS
+     ============================================================ -->
+<section class="section" id="instruments">
+	<div class="shell">
+		<div style="max-width:680px;">
+			<div class="eyebrow">What we are studying</div>
+			<h2 style="font-size:clamp(22px,3vw,34px);">Five instruments that could close the visibility gap</h2>
+		</div>
+
+		<div class="instr-grid">
+
+			<div class="instr-card reveal">
+				<div class="instr-card__num">01</div>
+				<div class="instr-card__icon">
+					<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+				</div>
+				<h3>M-Pesa transaction histories</h3>
+				<p>Converting mobile money records into portable credit signals.</p>
+				<div class="instr-card__status">Literature review done</div>
+			</div>
+
+			<div class="instr-card reveal reveal-d1">
+				<div class="instr-card__num">02</div>
+				<div class="instr-card__icon">
+					<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+				</div>
+				<h3>Verifiable skills credentials</h3>
+				<p>Digital badges for informal trades with no formal certification.</p>
+				<div class="instr-card__status">Scoping</div>
+			</div>
+
+			<div class="instr-card reveal reveal-d2">
+				<div class="instr-card__num">03</div>
+				<div class="instr-card__icon">
+					<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+				</div>
+				<h3>WhatsApp record-keeping</h3>
+				<p>Job and payment logs captured in the tool operators already use.</p>
+				<div class="instr-card__status">Prototype</div>
+			</div>
+
+			<div class="instr-card reveal reveal-d3">
+				<div class="instr-card__num">04</div>
+				<div class="instr-card__icon">
+					<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+				</div>
+				<h3>Chama buying groups</h3>
+				<p>Bulk purchasing built on existing savings associations.</p>
+				<div class="instr-card__status">Under review</div>
+			</div>
+
+			<div class="instr-card reveal reveal-d3">
+				<div class="instr-card__num">05</div>
+				<div class="instr-card__icon">
+					<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+				</div>
+				<h3>Mutual guarantees</h3>
+				<p>Group accountability as a substitute for individual collateral.</p>
+				<div class="instr-card__status">Seeking cases</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================
+     RESEARCH
+     ============================================================ -->
+<section class="section section--paper" id="research">
+	<div class="shell">
+		<div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;">
+			<div style="max-width:640px;">
+				<div class="eyebrow">Related research</div>
+				<h2 style="font-size:clamp(22px,3vw,34px);">What the literature already tells us</h2>
+			</div>
+			<a href="#contact" class="btn btn--ghost">Suggest a paper</a>
+		</div>
+
+		<div class="papers">
+
+			<a class="paper" href="https://www.kba.co.ke/site25/wp-content/uploads/2026/03/WPS1026-Wairimu-Kiragu.pdf" target="_blank" rel="noopener">
+				<span class="paper__badge paper__badge--brief">KBA Brief</span>
+				<p class="paper__title">Bridging the Financial Gap in MSME Financing in Kenya</p>
+				<p class="paper__author">Wairimu &amp; Kiragu · 2026</p>
+				<div class="paper__metric">16% <em>have credit</em></div>
+				<span class="paper__link">Read the brief</span>
+			</a>
+
+			<a class="paper" href="https://www.sciepub.com/portal/downloads?doi=10.12691/jbms-13-3-4&filename=jbms-13-3-4.pdf" target="_blank" rel="noopener">
+				<span class="paper__badge paper__badge--peer">Peer reviewed</span>
+				<p class="paper__title">Credit Access and Firm Performance in Murang'a County</p>
+				<p class="paper__author">Karanja &amp; Muathe · 2025</p>
+				<div class="paper__metric">&beta; = .420 <em>collateral effect</em></div>
+				<span class="paper__link">Read the paper</span>
+			</a>
+
+			<a class="paper" href="https://repository.ihu.gr/files/b28ca25b-862d-4572-ab4e-dd21328aa657/download/githenya_abednego_mwangi_2026.pdf" target="_blank" rel="noopener">
+				<span class="paper__badge paper__badge--thesis">Thesis</span>
+				<p class="paper__title">AI Credit Risk Modeling for M-Pesa Users</p>
+				<p class="paper__author">Githenya · 2025</p>
+				<div class="paper__metric">6 <em>months of data</em></div>
+				<span class="paper__link">Access the thesis</span>
+			</a>
+
+			<a class="paper" href="https://strathprints.strath.ac.uk/92378/7/Tetteh-etal-RDE-2025-Mobile-money-use-and-entrepreneurs-access-to-trade-credit.pdf" target="_blank" rel="noopener">
+				<span class="paper__badge paper__badge--peer">Peer reviewed</span>
+				<p class="paper__title">Mobile Money and Trade Credit in the Informal Sector</p>
+				<p class="paper__author">Tetteh, Goedhuys, Konte &amp; Mohnen · 2025</p>
+				<div class="paper__metric">+<em>credit access</em></div>
+				<span class="paper__link">Read the article</span>
+			</a>
+
+			<a class="paper" href="https://repository.kcau.ac.ke/bitstreams/32d4174b-053d-4b6c-9787-50e99af97baa/download" target="_blank" rel="noopener">
+				<span class="paper__badge paper__badge--thesis">Dissertation</span>
+				<p class="paper__title">Digital Finance and SME Performance in Nairobi County</p>
+				<p class="paper__author">Onchangwa · 2025</p>
+				<div class="paper__metric">r = .712 <em>correlation</em></div>
+				<span class="paper__link">Access the study</span>
+			</a>
+
+			<a class="paper" href="https://scholarlypublishingcollective.org/psup/african-development/article/26/1/30/393370/Households-Decision-to-Join-an-Informal-Financial" target="_blank" rel="noopener">
+				<span class="paper__badge paper__badge--peer">Peer reviewed</span>
+				<p class="paper__title">Why Households Join Informal Financial Groups</p>
+				<p class="paper__author">Agesa &amp; Agesa · 2025</p>
+				<div class="paper__metric">3 <em>chama types</em></div>
+				<span class="paper__link">Read the paper</span>
+			</a>
+
+			<a class="paper" href="https://www.ecofinagency.com/news-finances/0104-54308-kenyan-banks-lend-2-5-billion-to-msmes-in-2025-more-than-double-their-target" target="_blank" rel="noopener">
+				<span class="paper__badge paper__badge--data">Industry data</span>
+				<p class="paper__title">MSME Lending Report 2025</p>
+				<p class="paper__author">Kenya Bankers Association · 2026</p>
+				<div class="paper__metric">Sh326.5B <em>lent</em></div>
+				<span class="paper__link">Access the data</span>
+			</a>
+
+			<a class="paper" href="#" target="_blank" rel="noopener">
+				<span class="paper__badge paper__badge--brief">Report</span>
+				<p class="paper__title">The Global Informal Economy and the Green Transition</p>
+				<p class="paper__author">Royal Academy of Engineering · 2024</p>
+				<div class="paper__metric">90% <em>informal jobs</em></div>
+				<span class="paper__link">Access the report</span>
+			</a>
+
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================
+     BRIEFING VIDEO
+     ============================================================ -->
+<section class="section" id="briefing">
+	<div class="shell">
+		<div style="text-align:center; max-width:640px; margin:0 auto 32px;">
+			<div class="eyebrow">Research briefing</div>
+			<h2 style="font-size:clamp(22px,3vw,34px);">The argument in six minutes</h2>
+		</div>
+
+		<div class="video-card">
+			<div class="video-frame">
+				<script src="https://fast.wistia.com/player.js" async></script>
+				<script src="https://fast.wistia.com/embed/YOUR_VIDEO_ID.js" async type="module"></script>
+				<style>
+					wistia-player[media-id='YOUR_VIDEO_ID']:not(:defined){
+						background:#000; display:block; width:100%; height:100%;
+					}
+				</style>
+				<wistia-player media-id="YOUR_VIDEO_ID" aspect="1.7777777777777777"></wistia-player>
+			</div>
+			<div class="video-meta">
+				<span><b>March 2026</b> · Research seminar</span>
+				<span>
+					<a href="#">Transcript (PDF)</a> · <a href="#">Slides</a>
+				</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================
+     METHOD
+     ============================================================ -->
+<section class="section section--paper" id="method">
+	<div class="shell">
+		<div style="max-width:640px;">
+			<div class="eyebrow">Method</div>
+			<h2 style="font-size:clamp(22px,3vw,34px);">How we know what we know</h2>
+		</div>
+
+		<div class="method-row">
+			<div class="method">
+				<div class="method__icon">
+					<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-6"/></svg>
+				</div>
+				<h4>Secondary data</h4>
+				<p>Cross-checked figures from CBK, KBA, and KNBS.</p>
+			</div>
+			<div class="method">
+				<div class="method__icon">
+					<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+				</div>
+				<h4>Fieldwork</h4>
+				<p>Six weeks in Nairobi's repair and light manufacturing sectors.</p>
+			</div>
+			<div class="method">
+				<div class="method__icon">
+					<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+				</div>
+				<h4>Peer comment</h4>
+				<p>Working paper. Comments welcome, revisions acknowledged.</p>
+			</div>
+		</div>
+
+		<div style="text-align:center; margin-top:32px;">
+			<p style="font-family:var(--serif);font-size:14px;color:var(--ink-2);margin:0;">
+				<strong>How to cite:</strong> Wanjiru, A., Otieno, D., &amp; Kariuki, M. (2026). <em>Collateral, Visibility, and Credit Access for Kenya's 7.4 Million MSMEs.</em> The SILO Brief, Working Paper No. 1, v1.2.
+			</p>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================
+     TEAM
+     ============================================================ -->
+<section class="section" id="team">
+	<div class="shell">
+		<div style="max-width:640px;">
+			<div class="eyebrow">Team</div>
+			<h2 style="font-size:clamp(22px,3vw,34px);">Who conducted this work</h2>
+		</div>
+
+		<div class="team-row">
+			<div class="person">
+				<div class="person__avatar">AW</div>
+				<div>
+					<h4>Achieng Wanjiru</h4>
+					<div class="person__role">Principal investigator</div>
+					<p>Development economist. Mobile money and household finance in East Africa.</p>
+				</div>
+			</div>
+			<div class="person">
+				<div class="person__avatar">DO</div>
+				<div>
+					<h4>David Otieno</h4>
+					<div class="person__role">Field research lead</div>
+					<p>Ethnographic research on Nairobi's informal manufacturing.</p>
+				</div>
+			</div>
+			<div class="person">
+				<div class="person__avatar">MK</div>
+				<div>
+					<h4>Mary Kariuki</h4>
+					<div class="person__role">Data and analysis</div>
+					<p>Credit scoring and consumer finance. Quantitative analysis.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section class="section section--paper" id="contact">
+	<div class="shell">
+		<div class="contact-grid">
+			<div class="invite">
+				<div class="eyebrow">Correspondence</div>
+				<h2>We would value your perspective.</h2>
+				<p>If this intersects with your work as a lender, regulator, or researcher, we would welcome a conversation. In particular we seek <strong class="hl-red">critical response to our framing</strong>, comparative cases from other markets, and partnerships to test the instruments above.</p>
+
+				<ul class="paths">
+					<li><b>Corresponding author</b><a href="mailto:research@thesilobrief.org">research@thesilobrief.org</a></li>
+					<li><b>Policy and media</b><a href="mailto:policy@thesilobrief.org">policy@thesilobrief.org</a></li>
+					<li><b>Request field notes or data</b>Available on request for verification and replication.</li>
+				</ul>
+			</div>
+
+			<form class="form-card" action="https://formspree.io/f/myyleorq" method="POST">
+				<div class="field">
+					<label for="f-name">Name</label>
+					<input type="text" id="f-name" name="name" required>
+				</div>
+				<div class="field">
+					<label for="f-email">Email</label>
+					<input type="email" id="f-email" name="email" required>
+				</div>
+				<div class="field">
+					<label for="f-nature">Nature of enquiry</label>
+					<select id="f-nature" name="nature">
+						<option value="">Please select</option>
+						<option>Comment on the working paper</option>
+						<option>Research collaboration</option>
+						<option>Request data or field notes</option>
+						<option>Policy or media enquiry</option>
+					</select>
+				</div>
+				<div class="field">
+					<label for="f-msg">Message</label>
+					<textarea id="f-msg" name="message" required></textarea>
+				</div>
+				<button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;">
+					Send message
+					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+				</button>
+			</form>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+	<div class="shell">
+		<div class="footer__grid">
+			<div>
+				<div class="footer__brand">The SILO Brief</div>
+				<p style="line-height:1.65;max-width:340px;">A research programme on the informational distance between Kenya's formal financial system and its informal economy.</p>
+				<p style="margin-top:16px;font-size:13px;"><a href="mailto:research@thesilobrief.org">research@thesilobrief.org</a></p>
+			</div>
+			<div>
+				<h5>Research</h5>
+				<ul>
+					<li><a href="#problem">The Problem</a></li>
+					<li><a href="#gap">The Gap</a></li>
+					<li><a href="#method">Method</a></li>
+					<li><a href="#team">Team</a></li>
+				</ul>
+			</div>
+			<div>
+				<h5>Engage</h5>
+				<ul>
+					<li><a href="#contact">Comment</a></li>
+					<li><a href="#contact">Collaborate</a></li>
+					<li><a href="#contact">Request data</a></li>
+					<li><a href="#contact">Media</a></li>
+				</ul>
+			</div>
+			<div>
+				<h5>How to cite</h5>
+				<p class="footer__cite">Wanjiru, A., Otieno, D., &amp; Kariuki, M. (2026). <em>Collateral, Visibility, and Credit Access for Kenya's 7.4 Million MSMEs.</em> The SILO Brief, Working Paper No. 1, v1.2.</p>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<span>© 2026 The SILO Brief. Published openly.</span>
+			<span><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Data statement</a></span>
+		</div>
+	</div>
+</footer>
+
+<!-- ============================================================
+     JS
+     ============================================================ -->
+<script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+(function(){
+	'use strict';
+
+	/* Drawer */
+	var burger=document.getElementById('burger'),drawer=document.getElementById('drawer'),
+		overlay=document.getElementById('overlay'),drawerClose=document.getElementById('drawerClose');
+	function openDrawer(){ drawer.classList.add('open'); overlay.classList.add('open'); burger.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; }
+	function closeDrawer(){ drawer.classList.remove('open'); overlay.classList.remove('open'); burger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+	if(burger) burger.addEventListener('click',function(){ drawer.classList.contains('open')?closeDrawer():openDrawer(); });
+	if(drawerClose) drawerClose.addEventListener('click',closeDrawer);
+	if(overlay) overlay.addEventListener('click',closeDrawer);
+	document.querySelectorAll('.silo-drawer a').forEach(function(a){ a.addEventListener('click',closeDrawer); });
+
+	/* Reveal */
+	if('IntersectionObserver' in window){
+		var ro=new IntersectionObserver(function(entries){
+			entries.forEach(function(e){
+				if(e.isIntersecting){ e.target.classList.add('reveal'); ro.unobserve(e.target); }
+			});
+		},{threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+		document.querySelectorAll('.big-num, .instr-card, .paper, .method, .person').forEach(function(el){
+			el.style.opacity='0'; ro.observe(el);
+		});
+	}
+
+	/* Animate bars */
+	function animateBars(){
+		document.querySelectorAll('.compare__fill, .gap-bar__fill').forEach(function(el){
+			var w=el.getAttribute('data-width')||'0';
+			setTimeout(function(){ el.style.width=w+'%'; },120);
+		});
+	}
+	if('IntersectionObserver' in window){
+		var bo=new IntersectionObserver(function(entries){
+			entries.forEach(function(e){
+				if(e.isIntersecting){ animateBars(); bo.unobserve(e.target); }
+			});
+		},{threshold:0.2});
+		var panel=document.querySelector('.data-panel'); if(panel) bo.observe(panel);
+		var gap=document.querySelector('.gap-chart'); if(gap) bo.observe(gap);
+	} else { animateBars(); }
+
+	/* Smooth scroll */
+	document.querySelectorAll('a[href^="#"]').forEach(function(a){
+		a.addEventListener('click',function(e){
+			var h=this.getAttribute('href');
+			if(h==='#'||h.length<2) return;
+			var t=document.querySelector(h);
+			if(!t) return;
+			e.preventDefault();
+			var top=t.getBoundingClientRect().top+window.pageYOffset-70;
+			window.scrollTo({top:top,behavior:'smooth'});
+		});
+	});
+})();
+</script>
+</body>
+</html>
